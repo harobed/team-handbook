@@ -1,5 +1,7 @@
 # MyCompany Handbook
 
+Html version: https://harobed.github.io/team-handbook/
+
 ## Why?
 
 See [Handbook Usage - Advantages](https://about.gitlab.com/handbook/handbook-usage/#advantages) section.
