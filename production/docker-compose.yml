@@ -1,0 +1,16 @@
+version: '3'
+services:
+  handbook:
+    image: harobed/team-handbook
+    container_name: handbook
+    restart: unless-stopped
+    ports:
+      - 80:80
+
+  watchtower:
+    image: v2tec/watchtower:0.3.0
+    restart: unless-stopped
+    volumes:
+      - /root/.docker/config.json:/config.json
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30 handbook

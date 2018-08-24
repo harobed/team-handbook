@@ -1,0 +1,31 @@
+site_name: Team Handbook
+repo_name: 'harobed/team-handbook'
+repo_url: 'https://github.com/harobed/team-handbook'
+edit_uri: 'tree/master/src/docs/'
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  feature:
+    tabs: false
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/harobed/team-handbook'
+markdown_extensions:
+  - toc:
+      permalink: ¶
+extra_css:
+  - 'stylesheets/extra.css'
+nav:
+  - Home: index.md
+  - General:
+    - Values: en/general/values.md
+    - General Guidelines: en/general/general-guidelines.md
+    - Handbook Usage: en/general/handbook-usage.md
+    - Communication: en/general/communication.md

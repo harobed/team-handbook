@@ -1,0 +1,11 @@
+version: '3'
+services:
+  builder:
+    build: .
+    volumes:
+      - ./src/:/code/
+      - ./production/dist/:/dist/
+    working_dir: /code/
+    command: mkdocs serve -a 0.0.0.0:8000
+    ports:
+      - 8000
